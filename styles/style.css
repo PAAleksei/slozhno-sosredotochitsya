@@ -283,6 +283,7 @@
 
   .content__article-column-order {
     grid-template-columns: 32.1% 65%;
+    grid-template-rows: 14%;
   }
 
   .content__article-column-order .content__title {
@@ -384,6 +385,7 @@
 
   .content__article-column-order {
     grid-template-columns: 32.1% 65.9%;
+    grid-template-rows: 40%;
   }
 
   .content__article-uniq-order {

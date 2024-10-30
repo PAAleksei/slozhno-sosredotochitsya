@@ -210,8 +210,8 @@
 .content__gallery {
   display: grid;
   gap: 10px;
-  grid-template-rows: auto;
-  grid-auto-flow: dense;
+  grid-auto-flow: dense; 
+  grid-template-columns: repeat(auto-fit, minmax(min(375px, 100%), 1fr));
 }
 
 .footer {

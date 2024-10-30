@@ -1,20 +1,50 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-dark {
-  --accent-color: #ff0070;
-  --main-color: #000028;
-  --title-color: #db00ff;
-  --main-text-color: #f1b2ce;
-  --font-family: "IBM Plex Mono", sans-serif;
+.page.theme_dark {
+  --decorate-color: #FF0070;
+  --button-color: #FF0070;
+  --button-hover-color: rgba(255, 0, 112, 0.4);
+  --title-main-color: #DB00FF;
+  --title-shadow-color: #FF0070;
+  --accent-background-color: #FF0070;
+  --accent-text-color: #000028;
+  --main-text-color: #F1B2CE;
+  --link-shadow-color: #FF0070;
+  --font-family: 'IBM Plex Mono', sans-serif;
   --font-size-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-size-main-text: 18px;
+  --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
 }
 
 .page.theme_dark .header__decoration {
-  color: var(--accent-color);
   display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  
+  :root {
+    --decorate-color: #FF0070;
+    --button-color: #FF0070;
+    --button-hover-color: rgba(255, 0, 112, 0.4);
+    --title-main-color: #DB00FF;
+    --title-shadow-color: #FF0070;
+    --accent-background-color: #FF0070;
+    --accent-text-color: #000028;
+    --main-text-color: #F1B2CE;
+    --link-shadow-color: #FF0070;
+    --font-family: 'IBM Plex Mono', sans-serif;
+    --font-size-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --font-size-main-text: 18px;
+    --background-image: url(../images/cover-image-dark.png);
+    --background-color: #000028;
+  }
+
+  .page.theme_dark {
+    background-image: var(--background-image);
+    background-color: var(--background-color);
+  }
+
+  .header__decoration {
+    display: block;
+  }
+
 }
